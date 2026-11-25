@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
-"""main.py — news-image-20261124 entry point.
+"""main.py — news-image-20261124 v2 entry point.
 
 Copies the pre-rendered entry.png (produced offline by draw.py, shipped in
 this repo) to $MAKEFUN_OUTPUT_DIR/entry.png, byte for byte.
 
-Layout v3 (improvement pass, 2026-11-25): TODAY summary line under the date,
-icons on all medium-card banners, Gaza promoted to 10th medium card
-(28 stories, list renumbered 14-28). See verification-table.md.
-
-Layout v4 (final text fixes, 2026-11-25): Iran headline quoted
-("Iran 'developing chemical arms'"), Yemen toll time ~02:50 UTC with
-"25 dead or missing", UAE toll 13 (Interior Ministry), Hegseth wording
-for the Patriot interceptors, map pins 4/6/13 nudged apart.
+Layout v2 (2026-11-25): 37 stories (28 v1 + 9 approved new), 9 regions,
+14 fields (honest split: Markets & deals / Economy & budgets, Disaster /
+Migration). Masthead <=90px + region chips, 3 big + 10 medium cards,
+24 list lines in 3 columns, map + fields legend, DATE CHECK, footer.
+Hard rule: no text below 11px anywhere. See verification-table-v2-final.md.
 
 Standard library only: no PIL, no fonts, no network, no image processing.
 Verifies the PNG signature and that the image is exactly 1024x1024 before
